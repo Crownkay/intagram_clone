@@ -1,30 +1,23 @@
 import Post from "./Post";
 
-const post = [
+const posts = [
   {
-    id: "123",
+    id: "1",
     username: "adekola",
+    userImg: "./ADENIRAN.jpg",
+    img: "./ADENIRAN.jpg",
+    caption: "SUBSCRIBE AND DESTROY THE LIKE BUTTON for the YT algorithm",
+  },
+  {
+    id: "2",
+    username: "Crownkay",
     userImg: "./profile.jpg",
     img: "./profile.jpg",
     caption: "SUBSCRIBE AND DESTROY THE LIKE BUTTON for the YT algorithm",
   },
   {
-    id: "123",
-    username: "adekola",
-    userImg: "./profile.jpg",
-    img: "./profile.jpg",
-    caption: "SUBSCRIBE AND DESTROY THE LIKE BUTTON for the YT algorithm",
-  },
-  {
-    id: "123",
-    username: "adekola",
-    userImg: "./profile.jpg",
-    img: "./profile.jpg",
-    caption: "SUBSCRIBE AND DESTROY THE LIKE BUTTON for the YT algorithm",
-  },
-  {
-    id: "123",
-    username: "adekola",
+    id: "2",
+    username: "Crownkay",
     userImg: "./profile.jpg",
     img: "./profile.jpg",
     caption: "SUBSCRIBE AND DESTROY THE LIKE BUTTON for the YT algorithm",
@@ -33,17 +26,16 @@ const post = [
 function Posts() {
   return (
     <div>
-      <Post
-        key={post.id}
-        id={post.id}
-        username={post.username}
-        userImg={post.userImg}
-        img={post.img}
-        caption={post.caption}
-      />
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((post) => (
+        <Post
+          key={post.id}
+          id={post.id}
+          username={post.username}
+          userImg={post.userImg}
+          img={post.img}
+          caption={post.caption}
+        />
+      ))}
     </div>
   );
 }
