@@ -8,7 +8,7 @@ export default function Home() {
     <div className="bg-gray-50 h-screen overflow-y-scroll">
       <Head>
         <title>Instagram Clone</title>
-        <link rel="icon" href="https://links.papareact.com/jjm" />
+        <link rel="icon" href="/instagramLogo.png" />
       </Head>
       <Header />
       <Feed />

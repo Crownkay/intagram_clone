@@ -17,14 +17,14 @@ function Header() {
         {/* left */}
         <div className="relative hidden lg:inline-grid w-24">
           <Image
-            src="https://links.papareact.com/ocw"
+            src="/instagram.png"
             layout="fill"
             objectFit="contain"
           />
         </div>
         <div className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
           <Image
-            src="https://links.papareact.com/jjm"
+            src="/instagramLogo.png"
             layout="fill"
             objectFit="contain"
           />
